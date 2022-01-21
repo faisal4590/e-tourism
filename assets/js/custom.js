@@ -118,11 +118,9 @@ $(document).ready(function(){
 
     // 4. owl carousel
     
-        // i. #testimonial-carousel
-    
-        
-        var owl=$('#testemonial-carousel');
-        owl.owlCarousel({
+        // i. #featuredPhotosCarouselID
+        let featuredPhotosCarousel=$('#featuredPhotosCarouselID');
+        featuredPhotosCarousel.owlCarousel({
             items:3,
             margin:0,
             
@@ -151,9 +149,40 @@ $(document).ready(function(){
                         items:3
                     }
                 }
-            
-            
         });
+
+    // 2. #reviewsCarouselID
+    let reviewsCarousel=$('#reviewsCarouselID');
+    reviewsCarousel.owlCarousel({
+        items:3,
+        margin:0,
+
+        loop:true,
+        autoplay:true,
+        smartSpeed:1000,
+
+        //nav:false,
+        //navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+
+        dots:true,
+        autoplayHoverPause:true,
+
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            640:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
 
     // 5. datepicker
             $('[data-toggle="datepicker"]').datepicker();

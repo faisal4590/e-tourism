@@ -46,7 +46,7 @@
 
     <!--style.css-->
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/contact_us.css" />
+    <link rel="stylesheet" href="../assets/css/all-photos.css" />
 
     <!--responsive.css-->
     <link rel="stylesheet" href="../assets/css/responsive.css" />
@@ -91,7 +91,7 @@
                                 <li><a href="./about-us.html">about us</a></li>
                                 <li><a href="./contact_us.html">contact</a></li>
                                 <li><a href="./faq.html">faq</a></li>
-                                <li><a href="./my-account.html">My Account</a></li>
+                                <li><a href="./my-account.html">My account</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.main-menu-->
@@ -108,161 +108,97 @@
 <div id="breadcrumbID" class="container" style="margin-top: 60px">
     <ol class="breadcrumb">
         <li><a href="../index.html">Home</a></li>
-        <li class="active">faq</li>
+        <li><a href="./all-tourist-spots.html">Our all tourist spots</a></li>
+        <li><a href="./sajek_details.html">Nilgiri Army Resort</a></li>
+        <li class="active">All photos of nilgiri army resort</li>
     </ol>
 </div>
 <!-- breadcrumbs ends -->
 
-<!--faq starts-->
-<div class="panel-group container" id="accordion" style="margin-top: 20px">
-    <h2 class="text-center" style="padding: 10px"> Frequently asked questions</h2>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                    Do we provide refund policy?</a>
-            </h4>
+<!-- all photos start -->
+<div class="container" style=" margin-bottom: 50px; color: grey; margin-top: 20px;">
+    <div id="slideshowContainerID">
+        <h2 style="text-align:center;margin-bottom: 20px;">All photos of Nilgiri Army Resort</h2>
+        <div class="row">
+            <div class="column">
+                <img src="../assets/images/gallary/res-2-bambooChicken.jpg" style="width:100%; height: 250px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="../assets/images/gallary/re-two-fishfry.webp" style="width:100%; height: 250px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="../assets/images/gallary/res-two-vegetableCurry.jpg" style="width:100%; height: 250px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="../assets/images/gallary/res-2-bambooChicken.jpg" style="width:100%; height: 250px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
         </div>
-        <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../assets/images/gallary/res-2-bambooChicken.jpg" style="width:100%; height: 500px">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../assets/images/gallary/re-two-fishfry.webp" style="width:100%; height: 500px">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../assets/images/gallary/res-two-vegetableCurry.jpg" style="width:100%; height: 500px">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../assets/images/gallary/res-2-bambooChicken.jpg" style="width:100%; height: 500px">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/gallary/res-2-bambooChicken.jpg" style="width:100%; height: 250px" onclick="currentSlide(1)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/gallary/re-two-fishfry.webp" style="width:100%; height: 250px" onclick="currentSlide(2)" alt="Snow">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/gallary/res-two-vegetableCurry.jpg" style="width:100%; height: 250px" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/gallary/res-2-bambooChicken.jpg" style="width:100%; height: 250px" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                    What are our main services?</a>
-            </h4>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                    What payment method we use?
-                </a>
-            </h4>
-        </div>
-        <div id="collapse3" class="panel-collapse collapse">
-            <div class="panel-body">We accept credit and debit cards of all banks. Credit cards currently accepted include Visa and Mastercard</div>
-        </div>
-    </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                    What is our purpose?
-                </a>
-            </h4>
-        </div>
-        <div id="collapse4" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</div>
-        </div>
+    <!-- pagination starts -->
+    <div id="paginationID" style="margin-top: 20px;">
+        <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">6 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
     </div>
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                    What makes us unique?
-                </a>
-            </h4>
-        </div>
-        <div id="collapse5" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</div>
-        </div>
-    </div>
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                    What we provide?
-                </a>
-            </h4>
-        </div>
-        <div id="collapse6" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</div>
-        </div>
-    </div>
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-                    What are the frequentrly visited spots?
-                </a>
-            </h4>
-        </div>
-        <div id="collapse7" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</div>
-        </div>
-    </div>
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
-                    Why should you use this site?
-                </a>
-            </h4>
-        </div>
-        <div id="collapse8" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</div>
-        </div>
-    </div>
+    <!-- pagination ends -->
 </div>
-<!--faq ends-->
+<!-- all photos ends -->
 
 <!-- footer-copyright start -->
 <footer  class="footer-copyright">
@@ -381,6 +317,46 @@
 
 <!--Custom JS-->
 <script src="../assets/js/custom.js"></script>
+
+<!-- slideshow JS-->
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
 
 </body>
 </html>
